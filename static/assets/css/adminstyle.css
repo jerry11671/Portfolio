@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+
+:root{
+    --first-color: #f97c0e;
+    --secondary-color: #db6e10;
+    --white-color: #FAFAFF;
+    --dark-color: #2A3B47;
+    --text-color: #697477;
+}
+
+#header {
+    background: var(--first-color);
+}
+
+#branding h1 {
+    color: var(--white-color);
+}
+
+div.breadcrumbs {
+    background: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.login .submit-row {
+    padding: 0px !important;
+    margin: 0;
+    text-align: center;
+}
+
+input[type=submit], input[type=button], .submit-row input{
+    width: 100%;
+    background: var(--first-color); 
+}
+
+module h2, .module caption, .inline-group h2 {
+    background: var(--first-color); 
+}
+
+.submit-row input.default {
+    margin: 0 0 0 8px;
+    text-transform: uppercase;
+}
