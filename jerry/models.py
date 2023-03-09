@@ -1,5 +1,6 @@
 from distutils.command.upload import upload
 from django.db import models
+import uuid
 
 class Home(models.Model):
     name = models.CharField(max_length=20)
@@ -51,9 +52,10 @@ class Skills(models.Model):
 class Portfolio(models.Model):
     image = models.ImageField(upload_to='portfolio/')
     link = models.URLField(max_length=200)
+    user_id = models.UUIDField(null=True)
 
     def __str__(self):
-        return f'Portfolio {self.id}'
+        return f'Portfolio {self.user_id}'
 
 
 
